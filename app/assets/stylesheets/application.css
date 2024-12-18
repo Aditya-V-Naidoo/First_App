@@ -1,21 +1,122 @@
- body{
-    background-color: #007a83
+.DarkMode{
+--background_color: #1f1f1f;
+--font_color: #ffffff;
+--light_font: 'Microsoft YaHei Light';
+--bold_font: 'Microsoft YaHei';
+--hover_color: #4c4d4c;
+--headbar_color: #000000;
+--dropdown_background: #323332;
+--hover_font_color: #f0f8ff;
 }
+.LightMode{
+--background_color: #bfbdbd;
+--font_color: #000000;
+--light_font: 'Microsoft JhengHei Light';
+--bold_font: 'Microsoft JhengHei';
+--hover_color: #807f7e;
+--headbar_color: #ffffff;
+--dropdown_background: #f9f9f9;
+--hover_font_color: #f0f8ff;
+}
+.EaseEyeMode{
+--background_color: #ff7f50;
+--font_color: #ffffff;
+--light_font: 'Microsoft YaHei Light';
+--bold_font: 'Microsoft YaHei';
+--hover_color: #ff8c00;
+--headbar_color: #e9967a;    
+--dropdown_background: #f9f9f9;
+--hover_font_color: #f0f8ff;
+} 
+  
+body{
+    background-color: var(--background_color)
+}
+
+#top-header{
+    text-align: center;
+    height: 80px
+}
+
+#title{
+	float: left;
+	padding: none;
+	margin: none;
+	height: 60px;
+	width: 500px
+}
+
+nav{
+    padding: 10px 20px 10px 20px ;
+}
+
+ul li{
+ padding: 0px 10px 0px 10px;
+ font-family: var(--light_font);
+ list-style: none;
+}
+
+a{ 
+    color: var(--font_color);
+    text-decoration: none;
+}
+
+a:hover{
+    padding: 5px 10px 5px 10px ;
+    background-color: var(--hover_color);
+    color: (--hover_color);
+}
+
 header{
-    padding: none;
     height: 120px;
     width: 100%;
-    background-color: #7fffd4;
+    background-color: var(--headbar_color)
 }
     
 h1{
     padding: 5px 10px 5px 10px;
     align-self: center;
-    font-family: "roboto"; 
-    color: #ffffff 
+    font-family: var(--bold_font); 
+    color: var(--font_color) 
 }
 
 p{
-    font-family: "roboto"; 
-    color: #ffffff
+    font-family: var(--light_font); 
+    color: var(--font_color)
+}
+form{
+    padding: 25px 10px 25px 10px
+}
+table{
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    background-color:var(--headbar_color);
+} 
+
+header nav {
+	float: right
+}
+
+header nav ul {
+	margin: 0;
+	padding: 30px 25px 30px 25px ;
+	display: flex
+}
+
+button{
+    background-color: var(--hover_color);
+    color: var(--font_color);
+    border: none;
+}
+
+input{
+    background-color: var(--hover_color);
+    border: none;
+    font-family: var(--light_font);
+    color: var(--font_color)
+}
+
+button:hover{
+    background-color: var(--font_color);
+    color: var(--background_color);
 }

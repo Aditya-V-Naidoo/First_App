@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   def testing
-    render html: "testing.html.erb"
+    render html: "login.html.erb"
   end
 
   def about
