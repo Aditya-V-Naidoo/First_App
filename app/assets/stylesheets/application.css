@@ -85,7 +85,7 @@ p{
     color: var(--font_color)
 }
 form{
-    padding: 25px 10px 25px 10px
+    padding: 25px 500px 25px 500px
 }
 table{
     align-items: center;
@@ -110,8 +110,8 @@ button{
 }
 
 input{
-    background-color: var(--hover_color);
-    border: none;
+    background-color: var(--headbar_color);
+    border-color: var(--hover_color);
     font-family: var(--light_font);
     color: var(--font_color)
 }
