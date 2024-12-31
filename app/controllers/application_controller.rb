@@ -1,10 +1,15 @@
 class ApplicationController < ActionController::Base
-  def testing
-    render html: "login.html.erb"
+  class User < ApplicationRecord
+    has_many :lists 
   end
 
-  def about
-    @url = "adadasdasdadas"
-    render html: "about.html.erb"
-  end 
+  class List < ApplicationRecord
+    belongs_to :users
+    has_many :items 
+  end
+
+  class Item < ApplicationRecord
+    belongs_to :lists 
+  end
+
 end

@@ -46,6 +46,13 @@ body{
 	width: 500px
 }
 
+#create{
+    width: 700px;
+    height: 800px;
+    padding: 25px 500px 25px 500px;
+    align-items: center;
+}
+
 nav{
     padding: 10px 20px 10px 20px ;
 }
@@ -60,6 +67,7 @@ a{
     color: var(--font_color);
     text-decoration: none;
 }
+
 
 a:hover{
     padding: 5px 10px 5px 10px ;
@@ -87,6 +95,15 @@ p{
 form{
     padding: 25px 500px 25px 500px
 }
+
+#create_user{
+    padding: 25px 300px 25px 300px
+}
+
+#card{
+    padding: 20px 0px 20px 0px;
+}
+
 table{
     align-items: center;
     padding: 5px 10px 5px 10px;
@@ -103,10 +120,12 @@ header nav ul {
 	display: flex
 }
 
+
 button{
     background-color: var(--hover_color);
     color: var(--font_color);
     border: none;
+    padding: 5px 10px 5px 10px;
 }
 
 input{

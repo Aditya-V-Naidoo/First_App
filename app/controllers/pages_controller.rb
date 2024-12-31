@@ -18,4 +18,7 @@ class PagesController < ApplicationController
 
   end
 
+  def create_user
+  
+  end
 end
